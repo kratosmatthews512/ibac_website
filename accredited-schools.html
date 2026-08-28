@@ -1,0 +1,448 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Accredited Schools | IBAC</title><style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #081d33;
+    --blue: #123b63;
+    --gold: #c9a34e;
+    --light: #f5f7fa;
+    --gray: #657080;
+    --white: #ffffff;
+    --green: #1d7a46;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--light);
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--navy);
+    border-bottom: 4px solid var(--gold);
+    padding: 18px 7%;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h1 {
+    color: white;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.brand p {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    background: linear-gradient(rgba(8,29,51,.94), rgba(18,59,99,.92));
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+    color: #dce5ed;
+}
+
+.gold-line {
+    width: 90px;
+    height: 4px;
+    background: var(--gold);
+    margin: 20px auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: var(--navy);
+    font-size: 34px;
+}
+
+.section-title p {
+    color: var(--gray);
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+.notice {
+    background: #fff7df;
+    border-left: 5px solid var(--gold);
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+.search-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.register {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.register-title {
+    background: var(--navy);
+    color: white;
+    padding: 25px;
+}
+
+.register-title p {
+    color: #d8e1e8;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #eef1f4;
+    color: var(--navy);
+    text-align: left;
+    padding: 16px;
+}
+
+td {
+    padding: 18px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.institution-name {
+    color: var(--navy);
+    font-weight: bold;
+}
+
+.status {
+    display: inline-block;
+    background: #e5f5eb;
+    color: var(--green);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-state h3 {
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.info-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-top: 4px solid var(--gold);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.07);
+}
+
+.info-card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: var(--gray);
+}
+
+footer {
+    background: #050f19;
+    color: #c9d2db;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    td {
+        padding: 10px 15px;
+    }
+}
+</style></head><body><header>
+    <div class="navbar">    <div class="brand">
+        <h1>IBAC</h1>
+        <p>INDEPENDENT BIBLE ACCREDITATION COMMISSION</p>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#standards">Standards</a>
+        <a href="accredited-schools.html">Accredited Schools</a>
+        <a href="index.html#apply">Apply</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+</div>
+
+</header><section class="hero"><h1>Accredited Schools</h1>
+
+<div class="gold-line"></div>
+
+<p>
+    The official public register of institutions formally listed
+    by the Independent Bible Accreditation Commission.
+</p>
+
+</section><main class="container"><div class="section-title">
+
+    <h2>Official Accreditation Register</h2>
+
+    <p>
+        This register provides transparent public information regarding
+        institutions whose accreditation status has been formally approved
+        and published by IBAC.
+    </p>
+
+</div>
+
+<div class="notice">
+
+    <strong>Important Notice:</strong>
+    Only institutions that have received a formal accreditation decision
+    should be listed as accredited. Applicant, pending, candidate,
+    expired, withdrawn, or unverified institutions should not be
+    represented as currently accredited.
+
+</div>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="schoolSearch"
+        placeholder="Search by institution name, country, or accreditation number..."
+        onkeyup="searchSchools()"
+    >
+
+</div>
+
+<div class="register">
+
+    <div class="register-title">
+
+        <h2>Currently Accredited Institutions</h2>
+
+        <p>
+            Official institutions published in the IBAC accreditation register.
+        </p>
+
+    </div>
+
+    <table id="schoolsTable">
+
+        <thead>
+            <tr>
+                <th>Institution</th>
+                <th>Country</th>
+                <th>Status</th>
+                <th>Accreditation Number</th>
+                <th>Valid Until</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- ADD ACCREDITED SCHOOLS HERE -->
+
+            <tr>
+                <td colspan="5">
+
+                    <div class="empty-state">
+
+                        <h3>No Accredited Institutions Published Yet</h3>
+
+                        <p>
+                            As institutions are formally approved and
+                            authorized for publication, they may be
+                            added to this official register.
+                        </p>
+
+                    </div>
+
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="info-grid">
+
+    <div class="info-card">
+
+        <h3>Public Verification</h3>
+
+        <p>
+            Each published institution may have a unique accreditation
+            number to assist students and the public in verifying
+            accreditation information.
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <h3>Institutional Accountability</h3>
+
+        <p>
+            Accreditation status may be subject to continuing compliance,
+            institutional review, and periodic quality assurance procedures.
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <h3>Transparency</h3>
+
+        <p>
+            The public register helps institutions, students, churches,
+            and other stakeholders verify published accreditation claims.
+        </p>
+
+    </div>
+
+</div>
+
+</main><footer><p>
+    <strong>Independent Bible Accreditation Commission (IBAC)</strong>
+</p>
+
+<p>
+    © 2026 IBAC. All Rights Reserved.
+</p>
+
+<br>
+
+<a href="index.html">Return to Homepage</a>
+
+</footer><script>
+
+function searchSchools() {
+
+    const input = document.getElementById("schoolSearch");
+
+    const filter = input.value.toLowerCase();
+
+    const table = document.getElementById("schoolsTable");
+
+    const rows = table.getElementsByTagName("tr");
+
+    for (let i = 1; i < rows.length; i++) {
+
+        const text = rows[i].textContent || rows[i].innerText;
+
+        if (text.toLowerCase().indexOf(filter) > -1) {
+            rows[i].style.display = "";
+        } else {
+            rows[i].style.display = "none";
+        }
+
+    }
+
+}
+
+</script></body>
+  </html>
